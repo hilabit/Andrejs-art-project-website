@@ -5,7 +5,9 @@ const handlebars = require('express-handlebars');
 
 const portNumber = 2777;
 
+app.use(bodyParser.urlencoded({extended: false}));
 app.use('/public', express.static(__dirname + '/public'));
+app.use(express.static(__dirname + `/public`));
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
 
