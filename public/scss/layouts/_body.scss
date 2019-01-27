@@ -1,0 +1,11 @@
+body,html{
+    height:100%;
+    background-color: green;
+}
+
+.wrapper{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
