@@ -3,15 +3,16 @@
   justify-content: center;
   align-items: center;
   height: 100px;
-  background: pink;
+  background-color: #CFDBC7;
   width: 100%;
   &__element{
     height: 50%;
-      border: 1px solid red;
       margin: 0px 12px;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 12px;
+      border: 1px solid black;
+      border-radius: 25px;
   }
 }
