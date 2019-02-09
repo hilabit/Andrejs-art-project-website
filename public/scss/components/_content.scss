@@ -2,6 +2,27 @@
   &__wrap {
       height: 100%;
       width: 100%;
-      background-color: red;
+      position: relative;
+  }
+  &__screen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    &--video {
+      background: red;
+    }
+    &--artist {
+      background: yellow;
+      transform: translateX(-100%);
+    }
+    &--project {
+      background: blue;
+      transform: translateX(100%);
+    }
+    &--interviewees {
+      background: green;
+      transform: translateX(100%);
+    }
   }
 }
