@@ -12,17 +12,19 @@
     &--video {
       background: red;
     }
-    &--artist {
-      background: yellow;
-      transform: translateX(-100%);
-    }
     &--project {
       background: blue;
       transform: translateX(100%);
     }
     &--interviewees {
       background: green;
-      transform: translateX(100%);
+      transform: translateX(-100%);
     }
+    &--artist {
+      background: yellow;
+      transform: translateX(-100%);
+    }
+
+
   }
 }

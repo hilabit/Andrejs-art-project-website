@@ -140,7 +140,7 @@ a {
   height: 100px;
   background-color: #CFDBC7;
   width: 100%; }
-  .nav__element {
+  .nav__button {
     height: 50%;
     margin: 0px 12px;
     display: flex;
@@ -177,15 +177,15 @@ a {
   transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); }
   .content__screen--video {
     background: red; }
-  .content__screen--artist {
-    background: yellow;
-    transform: translateX(-100%); }
   .content__screen--project {
     background: blue;
     transform: translateX(100%); }
   .content__screen--interviewees {
     background: green;
-    transform: translateX(100%); }
+    transform: translateX(-100%); }
+  .content__screen--artist {
+    background: yellow;
+    transform: translateX(-100%); }
 
 body, html {
   height: 100%;
