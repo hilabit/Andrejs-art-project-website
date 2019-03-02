@@ -7,12 +7,16 @@ const client = contentful.createClient({
 
 async function getContent () {
   const content = await client.getEntries()
-  console.log(content.items)
-  return content;
+  const entries = content.items
+  ? content.items.map(item => item.fields) : null;
+  return {
+      video: entries[1],
+      artist: entries[3],
+      about: entries[2],
+      interviewees: entries[0],
+  }
 };
 
 module.exports = {
   getContent,
 };
-
-

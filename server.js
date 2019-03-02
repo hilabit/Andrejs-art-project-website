@@ -12,12 +12,16 @@ app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
 
 app.get('/', async (req, res) => {
-    const fields = await contentfulApi.getContent();
+    const content = await contentfulApi.getContent();
+    console.log(content)
+    const {video, artist, about, interviewees} = content;
     res.render('home', {
-      layout: 'layout',
-      fields,
+      layout:'layout',
+      video,
+      artist,
+      about,
+      interviewees
     });
   });
 
 app.listen(portNumber, ()=> console.log(`listening on ${portNumber}`));
-
