@@ -9,6 +9,7 @@ async function getContent () {
   const content = await client.getEntries()
   const entries = content.items
   ? content.items.map(item => item.fields) : null;
+  console.log("entries[0]:", entries[0]);
   return {
       video: entries[1].video.fields.file.url,
       artist: entries[3],
