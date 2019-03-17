@@ -10,7 +10,6 @@
     width: 100%;
     transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
     &--video {
-      background: red;
     }
     &--project {
       background: blue;
@@ -26,5 +25,9 @@
     }
 
 
+  }
+  &__video {
+    height: 100%;
+    width: 100%;
   }
 }

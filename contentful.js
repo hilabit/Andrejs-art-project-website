@@ -10,7 +10,7 @@ async function getContent () {
   const entries = content.items
   ? content.items.map(item => item.fields) : null;
   return {
-      video: entries[1],
+      video: entries[1].video.fields.file.url,
       artist: entries[3],
       about: entries[2],
       interviewees: entries[0],

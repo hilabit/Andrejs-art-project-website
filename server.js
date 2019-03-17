@@ -13,7 +13,6 @@ app.set('view engine', 'handlebars');
 
 app.get('/', async (req, res) => {
     const content = await contentfulApi.getContent();
-    console.log(content)
     const {video, artist, about, interviewees} = content;
     res.render('home', {
       layout:'layout',
