@@ -137,9 +137,12 @@ a {
   height: 100px;
   color: #EBE9E9;
   background-color: #111111;
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  visibility: hidden; }
   .nav__button {
     height: 50%;
+    visibility: visible;
     margin: 0px 12px;
     display: flex;
     justify-content: center;
@@ -152,8 +155,12 @@ a {
   display: flex;
   justify-content: space-between;
   height: 20%;
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  visibility: hidden;
+  bottom: 0; }
   .footer__element {
+    visibility: visible;
     max-height: 100%;
     width: 50%;
     padding: 12px;
@@ -163,39 +170,9 @@ a {
     align-items: center;
     color: #EBE9E9; }
 
-.content__wrap {
-  height: 100%;
-  width: 100%;
-  position: relative; }
-
-.content__screen {
-  padding: 12px;
-  position: absolute;
-  height: 100%;
-  max-width: 100%;
-  transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); }
-  .content__screen--video {
-    transform: none; }
-  .content__screen--project {
-    transform: translateX(100%); }
-  .content__screen--interviewees {
-    transform: translateX(-100%); }
-  .content__screen--artist {
-    transform: translateX(-100%); }
-
-.content__videoWrap {
-  position: relative;
-  height: 100%;
-  width: 100%; }
-
-.content__video {
-  min-width: 100vw;
-  height: 100%; }
-
 body, html {
-  height: 100%;
-  background-color: black;
-  overflow: hidden; }
+  height: 500vh;
+  background-image: linear-gradient(black, grey, white); }
 
 .wrapper {
   height: inherit;

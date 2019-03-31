@@ -6,8 +6,11 @@
   color: $White;
   background-color: $Black;
   width: 100%;
+  position: fixed;
+  visibility: hidden;
   &__button{
     height: 50%;
+      visibility: visible;
       margin: 0px 12px;
       display: flex;
       justify-content: center;
