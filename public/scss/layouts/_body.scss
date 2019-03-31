@@ -1,7 +1,7 @@
 body,html{
     height:100%;
-    background-color: $Black;
-    color: $White;
+    background-color: black;
+    overflow: hidden;
 }
 
 .wrapper{
@@ -9,4 +9,5 @@ body,html{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }

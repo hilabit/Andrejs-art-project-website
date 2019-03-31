@@ -135,12 +135,8 @@ a {
   justify-content: center;
   align-items: center;
   height: 100px;
-<<<<<<< HEAD
-  background-color: white;
-=======
   color: #EBE9E9;
   background-color: #111111;
->>>>>>> new-branch
   width: 100%; }
   .nav__button {
     height: 50%;
@@ -149,37 +145,23 @@ a {
     justify-content: center;
     align-items: center;
     padding: 12px;
-    border: 1px solid black;
     border-radius: 25px;
     cursor: pointer; }
 
 .footer {
   display: flex;
   justify-content: space-between;
-<<<<<<< HEAD
-  background-color: white;
-  height: 30%;
-=======
   height: 20%;
->>>>>>> new-branch
   width: 100%; }
   .footer__element {
     max-height: 100%;
     width: 50%;
     padding: 12px;
     display: flex;
-<<<<<<< HEAD
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: left; }
-  .footer__elementText {
-    font-size: 12px; }
-=======
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     color: #EBE9E9; }
->>>>>>> new-branch
 
 .content__wrap {
   height: 100%;
@@ -190,42 +172,34 @@ a {
   padding: 12px;
   position: absolute;
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); }
   .content__screen--video {
-    background: white; }
+    transform: none; }
   .content__screen--project {
-<<<<<<< HEAD
-    background: white;
-    transform: translateX(100%); }
-  .content__screen--interviewees {
-    background: white;
-    transform: translateX(-100%); }
-  .content__screen--artist {
-    background: white;
-=======
     transform: translateX(100%); }
   .content__screen--interviewees {
     transform: translateX(-100%); }
   .content__screen--artist {
->>>>>>> new-branch
     transform: translateX(-100%); }
 
-.content__video {
+.content__videoWrap {
+  position: relative;
   height: 100%;
   width: 100%; }
 
+.content__video {
+  min-width: 100vw;
+  height: 100%; }
+
 body, html {
   height: 100%;
-<<<<<<< HEAD
-  background-color: white; }
-=======
-  background-color: #111111;
-  color: #EBE9E9; }
->>>>>>> new-branch
+  background-color: black;
+  overflow: hidden; }
 
 .wrapper {
   height: inherit;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: relative; }
