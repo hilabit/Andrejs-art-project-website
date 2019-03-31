@@ -1,6 +1,7 @@
 body,html{
     height:100%;
     background-color: white;
+    overflow: hidden;
 
 }
 
@@ -9,4 +10,5 @@ body,html{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
