@@ -1,31 +1,33 @@
-// .content{
-//   &__wrap {
-//       height: 100%;
-//       width: 100%;
-//       height: 500vh;
-//       color: white;
-//       display: flex;
-//       flex-direction: column;
-//       align-items: flex-start;
-//   }
-//   &__screen {
-//     padding: 12px;
-//     transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
-//     &--video {
-//       transform: none;
-//     }
-//     &--project {
-//       transform: translateX(100%);
-//     }
-//     &--interviewees {
-//       transform: translateX(-100%);
-//     }
-//     &--artist {
-//       transform: translateX(-100%);
-//     }
-//   }
-//   &__video {
-//     min-width: 500px; 
-//     height: 500px;
-//   }
-// }
+.content{
+  &__wrap {
+      min-height: 100vh;
+      width: 100%;
+      color: white;
+      position: relative;
+      overflow-x: hidden;
+  }
+  &__screen {
+    position: absolute;
+    min-height: 100vh;
+    padding: 128px 5% 0;
+    transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    background: purple;
+    &--video {
+      transform: none;
+    }
+    &--project {
+      transform: translateX(100%);
+    
+    }
+    &--interviewees {
+      transform: translateX(-100%);
+    }
+    &--artist {
+      transform: translateX(-100%);
+    }
+  }
+  &__video {
+    min-width: 100%;
+    height: auto;
+  }
+}

@@ -4,12 +4,13 @@
   align-items: center;
   height: 100px;
   color: $White;
-  background-color: $Black;
   width: 100%;
   position: fixed;
   visibility: hidden;
+  z-index: 1;
   &__button{
     height: 50%;
+    background-color: $Black;
       visibility: visible;
       margin: 0px 12px;
       display: flex;
