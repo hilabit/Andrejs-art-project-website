@@ -136,10 +136,14 @@ a {
   align-items: center;
   height: 100px;
   color: #EBE9E9;
-  background-color: #111111;
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  visibility: hidden;
+  z-index: 1; }
   .nav__button {
     height: 50%;
+    background-color: #111111;
+    visibility: visible;
     margin: 0px 12px;
     display: flex;
     justify-content: center;
@@ -152,8 +156,13 @@ a {
   display: flex;
   justify-content: space-between;
   height: 20%;
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  visibility: hidden;
+  bottom: 0;
+  padding: 0 5%; }
   .footer__element {
+    visibility: visible;
     max-height: 100%;
     width: 50%;
     padding: 12px;
@@ -164,16 +173,18 @@ a {
     color: #EBE9E9; }
 
 .content__wrap {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
-  position: relative; }
+  color: white;
+  position: relative;
+  overflow-x: hidden; }
 
 .content__screen {
-  padding: 12px;
   position: absolute;
-  height: 100%;
-  max-width: 100%;
-  transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  min-height: 100vh;
+  padding: 128px 5% 0;
+  transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background: purple; }
   .content__screen--video {
     transform: none; }
   .content__screen--project {
@@ -183,19 +194,12 @@ a {
   .content__screen--artist {
     transform: translateX(-100%); }
 
-.content__videoWrap {
-  position: relative;
-  height: 100%;
-  width: 100%; }
-
 .content__video {
-  min-width: 100vw;
-  height: 100%; }
+  min-width: 100%;
+  height: auto; }
 
 body, html {
-  height: 100%;
-  background-color: black;
-  overflow: hidden; }
+  height: 100%; }
 
 .wrapper {
   height: inherit;

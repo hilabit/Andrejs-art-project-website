@@ -1,21 +1,23 @@
 .content{
   &__wrap {
-      height: 100%;
+      min-height: 100vh;
       width: 100%;
+      color: white;
       position: relative;
-
+      overflow-x: hidden;
   }
   &__screen {
-    padding: 12px;
     position: absolute;
-    height: 100%;
-    max-width: 100%;
+    min-height: 100vh;
+    padding: 128px 5% 0;
     transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    background: purple;
     &--video {
       transform: none;
     }
     &--project {
       transform: translateX(100%);
+    
     }
     &--interviewees {
       transform: translateX(-100%);
@@ -24,13 +26,8 @@
       transform: translateX(-100%);
     }
   }
-  &__videoWrap {
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
   &__video {
-    min-width: 100vw; 
-    height: 100%;
+    min-width: 100%;
+    height: auto;
   }
 }
