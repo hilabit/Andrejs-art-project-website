@@ -10,7 +10,6 @@
   z-index: 1;
   &__button{
     height: 50%;
-    background-color: $Black;
       visibility: visible;
       margin: 0px 12px;
       display: flex;
@@ -19,5 +18,6 @@
       padding: 12px;
       border-radius: 25px;
       cursor: pointer;
+      font-family: 'Major Mono Display', monospace;
   }
 }

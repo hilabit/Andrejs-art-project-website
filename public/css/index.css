@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans&display=swap");
 html,
 body,
 div,
@@ -142,7 +143,6 @@ a {
   z-index: 1; }
   .nav__button {
     height: 50%;
-    background-color: #111111;
     visibility: visible;
     margin: 0px 12px;
     display: flex;
@@ -150,7 +150,8 @@ a {
     align-items: center;
     padding: 12px;
     border-radius: 25px;
-    cursor: pointer; }
+    cursor: pointer;
+    font-family: 'Major Mono Display', monospace; }
 
 .footer {
   display: flex;
@@ -159,18 +160,20 @@ a {
   width: 100%;
   position: fixed;
   visibility: hidden;
-  bottom: 0;
-  padding: 0 5%; }
+  bottom: 0; }
   .footer__element {
     visibility: visible;
     max-height: 100%;
     width: 50%;
     padding: 12px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    color: #EBE9E9; }
+    color: #EBE9E9;
+    font-family: 'Open Sans', sans-serif; }
+    .footer__element:first-child {
+      justify-content: flex-start; }
+    .footer__element:last-child {
+      justify-content: flex-end; }
 
 .content__wrap {
   min-height: 100vh;
@@ -185,7 +188,7 @@ a {
   width: 100%;
   padding-top: 128px;
   transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-  background: purple; }
+  background-color: #111111; }
   .content__screen--video {
     padding-top: 0; }
   .content__screen--project {
@@ -194,6 +197,10 @@ a {
     transform: translateX(-100%); }
   .content__screen--artist {
     transform: translateX(-100%); }
+
+.content__text {
+  margin: 0 5%;
+  font-family: 'Open Sans', sans-serif; }
 
 .content__video {
   min-width: 100%;

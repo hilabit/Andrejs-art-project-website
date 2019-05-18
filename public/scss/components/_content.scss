@@ -12,7 +12,7 @@
     width: 100%;
     padding-top: 128px;
     transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
-    background: purple;
+    background-color: $Black;
     &--video {
       padding-top: 0;
     }
@@ -26,6 +26,10 @@
     &--artist {
       transform: translateX(-100%);
     }
+  }
+  &__text {
+    margin: 0 5%;
+    font-family: 'Open Sans', sans-serif;
   }
   &__video {
     min-width: 100%;
