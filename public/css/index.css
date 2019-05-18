@@ -182,11 +182,12 @@ a {
 .content__screen {
   position: absolute;
   min-height: 100vh;
-  padding: 128px 5% 0;
+  width: 100%;
+  padding-top: 128px;
   transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   background: purple; }
   .content__screen--video {
-    transform: none; }
+    padding-top: 0; }
   .content__screen--project {
     transform: translateX(100%); }
   .content__screen--interviewees {
